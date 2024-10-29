@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TITOLO SITO</title>
+    <link rel="stylesheet" href="stili/style.css">
+
+    <!-- fonts: -->
+
+  </head>
+
+    <body>
+
+        <div> <!-- PARAGRAFI -->
+          <p> spazio per i contenuti </p>
+          <p align="left"> - </p>
+          <p align="center">   </p>
+          <p align="center"> &hearts; </p>
+          <p align="center">   </p>
+          <p align="right"> - </p>
+
+          <!-- a capo automaticamente con ctrl+shift+p -> Toggle soft warp ..........................................................................................................................................................................................................
+          <br> -->
+
+          <br>
+
+          <a href="#fine">vai alla fine</a>
+
+        </div>
+
+        <div> <!-- LISTE -->
+          <p>lista non ordinata</p>
+          <ul>
+            <li>ELEMENTO</li>
+            <li>ELEMENTO</li>
+            <li>ELEMENTO</li>
+          </ul>
+
+          <br>
+
+          <p>lista ordinata</p>
+          <ol>
+            <li>PRIMO ELEMENTO</li>
+            <li>SECONDO ELEMENTO</li>
+            <li>TERZO ELEMENTO</li>
+          </ol>
+
+          <hr>
+          <br>
+
+          <!-- TABLE DENTRO LISTE
+            <ol>
+              <li>....</li>
+              <table>
+                <tr>
+                  <td>....</td>
+                </tr>
+                <tr>
+                  <td align='left'>....</td>
+                  <td align='center'>....</td>
+                </tr>
+              </table>
+            </ol>
+
+            <br> <hr> -->
+
+        </div>
+
+        <div> <!-- IMMAGINI
+          nel percorso le cartelle madri di quella in cui è l'index possono essere ignorate
+          width e height possono essere espresse o in % o in pixel o in em, in questo caso è lunga 1/4 della pagina e alta come 150 lettere m del font usato-->
+          <img src="immagini/monte.jpg" width="25%" height="150em" alt="descrizione: sfondo minimale con un monte azzurro" title="al passaggio del cursore: CIAO!">
+
+          <br>
+
+        </div>
+
+        <div> <!-- INPUT
+          tutto è all'interno di un form per fare in modo che tutto possa poi essere inviato al backend -->
+
+          <form class="" action="IndirizzoInAscoltoDoveSpediamoIlForm" method="get/post">
+
+            <input type="text" name="" value="" placeholder="INSERISCI QULACOSA!!" required> <!-- required indica che non si può lasciare vuoto -->
+            <br>
+            <input type="password" name="" value="">
+            <br>
+            <input type="number" name="coloreselezionato" value="">
+            <br>
+            <input type="color" name="" value="#96EED0">
+            <br>
+            <input type="checkbox" name="" value="">
+            <br>
+            <input type="time" name="" value="">
+            <br>
+            <input type="date" name="" value="">
+            <br>
+            <input type="file" name="" value="">
+            <br>
+            <input type="month" name="" value="">
+            <br>
+            <input type="range" name="" value="">
+            <br>
+            <input type="search" name="" value="">
+            <br>
+            <input type="button" name="" value="">
+            <br>
+            <input type="datetime-local" name="" value="">
+            <br>
+            <input type="email" name="" value="inserisci la mail" placeholder="ricorda la @">
+            <br>
+            <input type="hidden" name="" value="">
+            <br>
+            <input type="image" name="" value="">
+            <br>
+            <input type="tel" name="" value="">
+            <br>
+            <input type="url" name="" value="">
+            <br>
+            <input type="week" name="" value="">
+            <br>
+            <input type="radio" name="RISPOSTA" value="positivo"> Sì
+            <input type="radio" name="RISPOSTA" value="negativo"> No
+            <br>
+
+
+            <select class="" name="scelta">
+              <option value="opzione1">PRIMA OPZIONE</option>
+              <option value="opzione2">SECONDA OPZIONE</option>
+            </select>
+            <br>
+
+            <textarea name="" rows="8" cols="80"></textarea>
+            <br>
+
+            <button type="button" name="PULSANTE">PREMIMI</button>
+            <br>
+
+            <input type="submit" name="" value="">
+            <br>
+
+          </form>
+
+        </div>
+
+        <div> <!-- CSS -->
+
+          <p id="azzurro_trasparente">PARAGRAFO</p>
+          <h1 id="azzurro_trasparente" class="blu">titolo</h1> <!-- è azzurro, senza id è blu e senza class è giallo (perchè il tah h1 è giallo nel file css) -->
+
+          <div> ESEMPIO 0 </div>
+          <div class="esempio1"> ESEMPIO 1 </div> <br>
+          <div class="esempio2"> ESEMPIO 2 </div> <br>
+
+          <div class="BLOCCO" width="1000px">
+            <div class="margini1"> TESTO 1 </div>
+            <div class="margini2"> TESTO 2 </div>
+          </div>
+
+          <br>
+
+          <div class="quadrato"> ... </div>
+
+          <p class="tipo"> blocco1 </p> <b> successivo </b>
+          <p class="tipo"> blocco2 </p>
+
+          <div class="blu"> BLU </div>
+          <div class="sottolineato"> SOTTOLINEATO </div>
+          <div class="blu sottolineato"> BLU E SOTTOLINEATO </div>
+
+          <div class="discendente">
+            <span>
+              <p> prova descendant selector </p>
+              non p &#9632;
+            </span>
+          </div>
+
+          <div class="class0" id="ID0">???</div>
+          <div class="class0">!!!</div>
+
+          <div class="discendente padre">
+            non p &#9723;
+            <p> prova child selector </p>
+            <span>
+              <p> prova descendant selector </p>
+            </span>
+          </div>
+
+          <input type="email" value="esempio@mail.it">
+
+          <div class="padre">
+            <h4> figlio 1 </h4>
+            <h4> figlio 2 </h4>
+            <h4> figlio 3 </h4>
+            <h4> figlio 4 </h4>
+            <h4> figlio 5 </h4>
+          </div>
+
+          <a name="fine" class="interattivo" target="_self"> LINK </a>
+
+          <hr>
+
+          <br>
+
+          <div class="quadratino posizione0">POSIZIONE 0</div>
+          <div class="quadratino posizione1">POSIZIONE 1</div>
+          <div class="quadratino posizione2">POSIZIONE 2</div>
+          <div class="quadratino posizione3">POSIZIONE 3</div>
+          <div class="quadratino posizione4">POSIZIONE 4</div>
+
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- a -->
+
+    </body>
+</html>
